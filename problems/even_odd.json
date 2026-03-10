@@ -1,0 +1,14 @@
+{
+  "title": "Even or Odd",
+  "difficulty": "easy",
+  "description": "Given a number, print even or odd.",
+
+  "sample_testcases": [
+    {"input": "4", "output": "even"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "5", "output": "odd"},
+    {"input": "10", "output": "even"}
+  ]
+}

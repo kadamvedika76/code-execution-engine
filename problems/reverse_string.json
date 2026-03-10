@@ -1,0 +1,14 @@
+{
+  "title": "Reverse String",
+  "difficulty": "easy",
+  "description": "Given a string, print the reverse.",
+
+  "sample_testcases": [
+    {"input": "hello", "output": "olleh"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "world", "output": "dlrow"},
+    {"input": "python", "output": "nohtyp"}
+  ]
+}

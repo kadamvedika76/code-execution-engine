@@ -1,0 +1,15 @@
+{
+  "title": "Sum Two Numbers",
+  "difficulty": "easy",
+  "description": "Given two integers, print their sum.",
+
+  "sample_testcases": [
+    {"input": "2 3", "output": "5"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "10 20", "output": "30"},
+    {"input": "7 8", "output": "15"},
+    {"input": "-5 5", "output": "0"}
+  ]
+}
