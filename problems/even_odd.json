@@ -1,14 +1,16 @@
 {
   "title": "Even or Odd",
   "difficulty": "easy",
-  "description": "Given a number, print even or odd.",
+  "description": "Given an integer N, print even if N is even otherwise print odd.",
 
   "sample_testcases": [
-    {"input": "4", "output": "even"}
+    {"input": "4", "output": "even"},
+    {"input": "5", "output": "odd"}
   ],
 
   "hidden_testcases": [
-    {"input": "5", "output": "odd"},
-    {"input": "10", "output": "even"}
+    {"input": "0", "output": "even"},
+    {"input": "-7", "output": "odd"},
+    {"input": "1000000", "output": "even"}
   ]
 }

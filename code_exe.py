@@ -2,6 +2,14 @@ import subprocess
 import tempfile
 import os
 import time
+import sys
+import glob
+import logging
+import gc
+
+
+
+logger = logging.getLogger(__name__)
 
 def clean_output(text):
     return text.strip()
@@ -15,7 +23,7 @@ def run_python(code, input_data):
 
         start = time.time()
         result = subprocess.run(
-            ["python", filename],
+            [sys.executable, filename],
             input=input_data,
             capture_output=True,
             text=True,
@@ -30,6 +38,9 @@ def run_python(code, input_data):
 
     except subprocess.TimeoutExpired:
         return "TLE", None, 2000
+
+    except FileNotFoundError:
+        return "RE", "Python interpreter not found on server", 0
 
     finally:
         if filename and os.path.exists(filename):
@@ -72,9 +83,41 @@ def run_c(code, input_data):
     except subprocess.TimeoutExpired:
         return "TLE", None, 2000
 
+    except FileNotFoundError:
+        return "CE", "GCC compiler not found on server", 0
+
     finally:
-        if c_file and os.path.exists(c_file): os.remove(c_file)
-        if exe_file and os.path.exists(exe_file): os.remove(exe_file)
+    # force garbage collection first
+    
+        gc.collect()
+        if c_file and os.path.exists(c_file):
+            try:
+                os.remove(c_file)
+            except Exception as e:
+                logger.warning(f"Could not delete c file: {e}")
+        
+        if exe_file and os.path.exists(exe_file):
+            if os.name == 'nt':
+                # Windows specific fix
+                import ctypes
+                for attempt in range(10):  # try 10 times
+                    try:
+                        os.remove(exe_file)
+                        logger.debug(f"Deleted exe on attempt {attempt + 1}")
+                        break
+                    except PermissionError:
+                        time.sleep(0.2)  # wait longer — 200ms
+                else:
+                    # rename instead of delete
+                    # renamed files dont cause conflicts
+                    try:
+                        trash_name = exe_file + ".old"
+                        os.rename(exe_file, trash_name)
+                        logger.warning(f"Renamed locked file to {trash_name}")
+                    except Exception as e:
+                        logger.warning(f"Could not delete or rename: {e}")
+            else:
+                os.remove(exe_file)
 
 def run_java(code, input_data):
     try:
@@ -108,11 +151,27 @@ def run_java(code, input_data):
     except subprocess.TimeoutExpired:
         return "TLE", None, 2000
 
-    finally:
-        if os.path.exists("Main.java"): os.remove("Main.java")
-        if os.path.exists("Main.class"): os.remove("Main.class")
+    except FileNotFoundError:
+        return "CE", "Java compiler not found on server", 0
 
+
+    finally:
+        if os.path.exists("Main.java"): 
+            os.remove("Main.java")
+        for class_file in glob.glob("*.class"):
+            os.remove(class_file)
 def evaluate_submission(code, language, test_cases):
+
+    # validation checks
+    if not code or not code.strip():
+        return {"verdict": "Error", "message": "No code submitted"}
+    
+    if language not in ["python", "c", "java"]:
+        return {"verdict": "Error", "message": f"Unsupported language: {language}"}
+    
+    if not test_cases or len(test_cases) == 0:
+        return {"verdict": "Error", "message": "No test cases found"}
+
     total_runtime = 0
 
     for i, case in enumerate(test_cases, start=1):
@@ -125,23 +184,25 @@ def evaluate_submission(code, language, test_cases):
             output, error, runtime = run_c(code, input_data)
         elif language == "java":
             output, error, runtime = run_java(code, input_data)
-        else:
-            return {"verdict": "Unsupported Language"}
 
         total_runtime += runtime
 
         if output == "TLE":
+            logger.warning(f"Test Case {i} → TLE")
             return {"verdict": "TLE", "test_case": i, "time_ms": 2000}
 
         if output == "CE":
+            logger.error(f"Compilation Error: {error}")
             return {"verdict": "CE", "error": error, "test_case": i}
 
         if output == "RE":
+            logger.error(f"Test Case {i} → Runtime Error: {error}")
             return {"verdict": "RE", "error": error, "test_case": i}
 
         if clean_output(output) == clean_output(expected_output):
-            print(f"Test Case {i} → PASS ({runtime:.1f}ms)")
+            logger.info(f"Test Case {i} → PASS ({runtime:.1f}ms)")
         else:
+            logger.warning(f"Test Case {i} → WA")
             return {
                 "verdict": "WA",
                 "test_case": i,
@@ -151,3 +212,4 @@ def evaluate_submission(code, language, test_cases):
             }
 
     return {"verdict": "AC", "time_ms": round(total_runtime, 2)}
+

@@ -1,0 +1,16 @@
+{
+  "title": "Array Sum",
+  "difficulty": "easy",
+  "description": "First line contains N followed by N integers. Print their sum.",
+
+  "sample_testcases": [
+    {"input": "5\n1 2 3 4 5", "output": "15"},
+    {"input": "3\n10 20 30", "output": "60"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "1\n10", "output": "10"},
+    {"input": "4\n-1 -2 -3 -4", "output": "-10"},
+    {"input": "6\n100 200 300 400 500 600", "output": "2100"}
+  ]
+}

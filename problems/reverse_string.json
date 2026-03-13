@@ -1,14 +1,16 @@
 {
   "title": "Reverse String",
   "difficulty": "easy",
-  "description": "Given a string, print the reverse.",
+  "description": "Given a string, print the reversed string.",
 
   "sample_testcases": [
-    {"input": "hello", "output": "olleh"}
+    {"input": "hello", "output": "olleh"},
+    {"input": "abc", "output": "cba"}
   ],
 
   "hidden_testcases": [
-    {"input": "world", "output": "dlrow"},
-    {"input": "python", "output": "nohtyp"}
+    {"input": "a", "output": "a"},
+    {"input": "racecar", "output": "racecar"},
+    {"input": "pythonprogramming", "output": "gnimmargorpnohtyp"}
   ]
 }

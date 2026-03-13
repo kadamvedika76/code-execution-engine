@@ -1,0 +1,15 @@
+{
+  "title": "Word Count",
+  "difficulty": "easy",
+  "description": "Given a sentence, print the number of words.",
+
+  "sample_testcases": [
+    {"input": "hello world", "output": "2"},
+    {"input": "this is test", "output": "3"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "one", "output": "1"},
+    {"input": "python programming language", "output": "3"}
+  ]
+}

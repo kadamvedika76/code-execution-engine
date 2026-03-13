@@ -1,0 +1,15 @@
+{
+  "title": "Largest Element",
+  "difficulty": "easy",
+  "description": "First line contains N followed by N integers. Print the largest element.",
+
+  "sample_testcases": [
+    {"input": "5\n1 2 3 4 5", "output": "5"},
+    {"input": "3\n5 2 9", "output": "9"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "1\n10", "output": "10"},
+    {"input": "4\n-1 -2 -3 -4", "output": "-1"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Nth Fibonacci",
+  "difficulty": "easy",
+  "description": "Given N, print the Nth Fibonacci number.",
+
+  "sample_testcases": [
+    {"input": "5", "output": "5"},
+    {"input": "6", "output": "8"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "1", "output": "1"},
+    {"input": "2", "output": "1"},
+    {"input": "10", "output": "55"}
+  ]
+}

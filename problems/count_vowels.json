@@ -1,0 +1,16 @@
+{
+  "title": "Count Vowels",
+  "difficulty": "easy",
+  "description": "Given a string, count number of vowels.",
+
+  "sample_testcases": [
+    {"input": "hello", "output": "2"},
+    {"input": "education", "output": "5"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "sky", "output": "0"},
+    {"input": "AEIOU", "output": "5"},
+    {"input": "programming", "output": "3"}
+  ]
+}

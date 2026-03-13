@@ -1,15 +1,18 @@
 {
   "title": "Sum Two Numbers",
   "difficulty": "easy",
-  "description": "Given two integers, print their sum.",
+  "description": "Given two integers A and B on same line, print their sum.",
 
   "sample_testcases": [
-    {"input": "2 3", "output": "5"}
+    {"input": "2 3", "output": "5"},
+    {"input": "-1 1", "output": "0"}
   ],
 
   "hidden_testcases": [
+    {"input": "0 0", "output": "0"},
     {"input": "10 20", "output": "30"},
-    {"input": "7 8", "output": "15"},
-    {"input": "-5 5", "output": "0"}
+    {"input": "-5 5", "output": "0"},
+    {"input": "-10 -20", "output": "-30"},
+    {"input": "1000000 2000000", "output": "3000000"}
   ]
 }

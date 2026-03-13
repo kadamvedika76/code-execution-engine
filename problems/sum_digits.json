@@ -1,0 +1,15 @@
+{
+  "title": "Sum of Digits",
+  "difficulty": "easy",
+  "description": "Given an integer N, print the sum of its digits.",
+
+  "sample_testcases": [
+    {"input": "123", "output": "6"},
+    {"input": "456", "output": "15"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "0", "output": "0"},
+    {"input": "999", "output": "27"}
+  ]
+}

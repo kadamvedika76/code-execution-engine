@@ -1,0 +1,16 @@
+{
+  "title": "Palindrome Check",
+  "difficulty": "easy",
+  "description": "Check if a given string is palindrome. Print true or false.",
+
+  "sample_testcases": [
+    {"input": "madam", "output": "true"},
+    {"input": "hello", "output": "false"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "a", "output": "true"},
+    {"input": "racecar", "output": "true"},
+    {"input": "python", "output": "false"}
+  ]
+}
