@@ -1,0 +1,16 @@
+{
+  "title": "Least Common Multiple",
+  "difficulty": "easy",
+  "description": "Given two integers A and B, print their least common multiple.",
+
+  "sample_testcases": [
+    {"input": "4 6", "output": "12"},
+    {"input": "3 5", "output": "15"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "7 3", "output": "21"},
+    {"input": "10 8", "output": "40"},
+    {"input": "12 15", "output": "60"}
+  ]
+}

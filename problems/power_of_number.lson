@@ -1,0 +1,16 @@
+{
+  "title": "Power of Number",
+  "difficulty": "easy",
+  "description": "Given two integers A and B, print A raised to the power B.",
+
+  "sample_testcases": [
+    {"input": "2 3", "output": "8"},
+    {"input": "5 2", "output": "25"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "3 4", "output": "81"},
+    {"input": "10 2", "output": "100"},
+    {"input": "7 1", "output": "7"}
+  ]
+}

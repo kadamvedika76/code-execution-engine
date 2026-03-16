@@ -1,0 +1,16 @@
+{
+  "title": "Valid Parentheses",
+  "difficulty": "medium",
+  "description": "Given a string containing parentheses (), {}, [], determine if it is valid.",
+
+  "sample_testcases": [
+    {"input": "()[]{}", "output": "true"},
+    {"input": "(]", "output": "false"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "({[]})", "output": "true"},
+    {"input": "(((", "output": "false"},
+    {"input": "{[()]}", "output": "true"}
+  ]
+}

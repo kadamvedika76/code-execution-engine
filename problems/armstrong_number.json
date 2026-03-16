@@ -1,0 +1,16 @@
+{
+  "title": "Armstrong Number",
+  "difficulty": "easy",
+  "description": "Check if the number is an Armstrong number.",
+
+  "sample_testcases": [
+    {"input": "153", "output": "true"},
+    {"input": "123", "output": "false"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "370", "output": "true"},
+    {"input": "371", "output": "true"},
+    {"input": "407", "output": "true"}
+  ]
+}

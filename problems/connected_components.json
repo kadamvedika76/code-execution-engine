@@ -1,0 +1,15 @@
+{
+  "title": "Connected Components",
+  "difficulty": "medium",
+  "description": "Given number of nodes and edges, find the number of connected components.",
+
+  "sample_testcases": [
+    {"input": "5 3\n1 2\n2 3\n4 5", "output": "2"},
+    {"input": "4 2\n1 2\n3 4", "output": "2"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "6 3\n1 2\n3 4\n5 6", "output": "3"},
+    {"input": "5 4\n1 2\n2 3\n3 4\n4 5", "output": "1"}
+  ]
+}

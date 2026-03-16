@@ -1,0 +1,15 @@
+{
+  "title": "Square Numbers",
+  "difficulty": "easy",
+  "description": "First line contains N followed by N integers. Print squares of all numbers separated by space.",
+
+  "sample_testcases": [
+    {"input": "3\n1 2 3", "output": "1 4 9"},
+    {"input": "2\n4 5", "output": "16 25"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "4\n2 3 4 5", "output": "4 9 16 25"},
+    {"input": "3\n6 7 8", "output": "36 49 64"}
+  ]
+}

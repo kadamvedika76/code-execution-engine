@@ -1,0 +1,17 @@
+{
+  "title": "Prime Number",
+  "difficulty": "easy",
+  "description": "Given an integer N, print true if it is a prime number otherwise print false.",
+
+  "sample_testcases": [
+    {"input": "7", "output": "true"},
+    {"input": "10", "output": "false"}
+  ],
+
+  "hidden_testcases": [
+    {"input": "2", "output": "true"},
+    {"input": "1", "output": "false"},
+    {"input": "17", "output": "true"},
+    {"input": "20", "output": "false"}
+  ]
+}
