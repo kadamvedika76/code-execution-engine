@@ -99,7 +99,7 @@ def run_python_docker(code, input_data):
 
         
         output, error, runtime, exit_code = run_container(
-            "sh -c 'python3 solution.py < input.txt'",
+            ["sh", "-c", "python3 solution.py < input.txt"],
             temp_dir,
             timeout=5
         )
@@ -144,7 +144,7 @@ def run_c_docker(code, input_data):
         logger.debug("C compilation successful")
 
         output, error, runtime, exit_code = run_container(
-            "sh -c './solution < input.txt'",
+            ["sh", "-c", "./solution < input.txt"],
             temp_dir,
             timeout=5
         )
@@ -193,7 +193,7 @@ def run_java_docker(code, input_data):
 
        
         output, error, runtime, exit_code = run_container(
-            "sh -c 'java Main < input.txt'",
+            ["sh", "-c", "java Main < input.txt"],
             temp_dir,
             timeout=5
         )
