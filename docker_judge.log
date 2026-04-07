@@ -218,3 +218,91 @@ solution.c:1:9: error: unknown type name 'not'
 2026-03-22 01:56:23,974 - docker_executor - DEBUG - Code cleaned: 242 characters
 2026-03-22 01:56:24,773 - docker_executor - DEBUG - Java compilation successful
 2026-03-22 01:56:25,160 - docker_executor - WARNING - Test Case 1 -> WA
+2026-04-07 17:35:34,688 - docker_executor - DEBUG - Docker is running
+2026-04-07 17:35:34,690 - docker_executor - DEBUG - Code cleaned: 45 characters
+2026-04-07 17:35:35,329 - docker_executor - INFO - Test Case 1 -> PASS (545.4ms)
+2026-04-07 17:35:35,765 - docker_executor - INFO - Test Case 2 -> PASS (351.7ms)
+2026-04-07 17:35:36,225 - docker_executor - INFO - Test Case 3 -> PASS (388.2ms)
+2026-04-07 17:35:36,637 - docker_executor - INFO - Test Case 4 -> PASS (338.5ms)
+2026-04-07 17:35:37,100 - docker_executor - INFO - Test Case 5 -> PASS (380.8ms)
+2026-04-07 17:35:37,517 - docker_executor - INFO - Test Case 6 -> PASS (340.4ms)
+2026-04-07 17:35:38,021 - docker_executor - INFO - Test Case 7 -> PASS (428.1ms)
+2026-04-07 17:35:38,031 - docker_executor - DEBUG - Docker is running
+2026-04-07 17:35:38,032 - docker_executor - DEBUG - Code cleaned: 45 characters
+2026-04-07 17:35:38,499 - docker_executor - WARNING - Test Case 1 -> WA
+2026-04-07 17:35:38,529 - docker_executor - DEBUG - Docker is running
+2026-04-07 17:35:38,529 - docker_executor - DEBUG - Code cleaned: 83 characters
+2026-04-07 17:35:38,953 - docker_executor - INFO - Test Case 1 -> PASS (333.8ms)
+2026-04-07 17:35:39,372 - docker_executor - INFO - Test Case 2 -> PASS (348.5ms)
+2026-04-07 17:35:39,743 - docker_executor - INFO - Test Case 3 -> PASS (305.1ms)
+2026-04-07 17:35:40,161 - docker_executor - INFO - Test Case 4 -> PASS (339.7ms)
+2026-04-07 17:35:40,574 - docker_executor - INFO - Test Case 5 -> PASS (327.5ms)
+2026-04-07 17:35:40,947 - docker_executor - INFO - Test Case 6 -> PASS (302.2ms)
+2026-04-07 17:35:40,956 - docker_executor - DEBUG - Docker is running
+2026-04-07 17:35:40,957 - docker_executor - DEBUG - Code cleaned: 20 characters
+2026-04-07 17:35:46,321 - docker_executor - WARNING - Python TLE
+2026-04-07 17:35:46,323 - docker_executor - WARNING - Test Case 1 -> TLE
+2026-04-07 17:35:46,331 - docker_executor - DEBUG - Docker is running
+2026-04-07 17:35:46,331 - docker_executor - DEBUG - Code cleaned: 47 characters
+2026-04-07 17:35:46,759 - docker_executor - WARNING - Test Case 1 -> WA
+2026-04-07 17:35:46,767 - docker_executor - DEBUG - Docker is running
+2026-04-07 17:35:46,767 - docker_executor - DEBUG - Code cleaned: 126 characters
+2026-04-07 17:35:47,441 - docker_executor - DEBUG - C compilation successful
+2026-04-07 17:35:47,834 - docker_executor - INFO - Test Case 1 -> PASS (325.5ms)
+2026-04-07 17:35:48,348 - docker_executor - DEBUG - C compilation successful
+2026-04-07 17:35:48,728 - docker_executor - INFO - Test Case 2 -> PASS (300.4ms)
+2026-04-07 17:35:49,172 - docker_executor - DEBUG - C compilation successful
+2026-04-07 17:35:49,538 - docker_executor - INFO - Test Case 3 -> PASS (301.7ms)
+2026-04-07 17:35:50,040 - docker_executor - DEBUG - C compilation successful
+2026-04-07 17:35:50,393 - docker_executor - INFO - Test Case 4 -> PASS (287.7ms)
+2026-04-07 17:35:50,895 - docker_executor - DEBUG - C compilation successful
+2026-04-07 17:35:51,260 - docker_executor - INFO - Test Case 5 -> PASS (302.5ms)
+2026-04-07 17:35:51,730 - docker_executor - DEBUG - C compilation successful
+2026-04-07 17:35:52,101 - docker_executor - INFO - Test Case 6 -> PASS (299.7ms)
+2026-04-07 17:35:52,565 - docker_executor - DEBUG - C compilation successful
+2026-04-07 17:35:52,931 - docker_executor - INFO - Test Case 7 -> PASS (303.9ms)
+2026-04-07 17:35:52,940 - docker_executor - DEBUG - Docker is running
+2026-04-07 17:35:52,940 - docker_executor - DEBUG - Code cleaned: 126 characters
+2026-04-07 17:35:53,463 - docker_executor - DEBUG - C compilation successful
+2026-04-07 17:35:53,832 - docker_executor - WARNING - Test Case 1 -> WA
+2026-04-07 17:35:53,843 - docker_executor - DEBUG - Docker is running
+2026-04-07 17:35:53,844 - docker_executor - DEBUG - Code cleaned: 18 characters
+2026-04-07 17:35:54,270 - docker_executor - ERROR - C CE: solution.c:1:1: error: unknown type name 'this'
+    1 | this is not c code
+      | ^~~~
+solution.c:1:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'not'
+    1 | this is not c code
+      |         ^~~
+solution.c:1:9: error: unknown type name 'not'
+2026-04-07 17:35:54,272 - docker_executor - ERROR - Compilation Error: solution.c:1:1: error: unknown type name 'this'
+    1 | this is not c code
+      | ^~~~
+solution.c:1:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'not'
+    1 | this is not c code
+      |         ^~~
+solution.c:1:9: error: unknown type name 'not'
+2026-04-07 17:35:54,280 - docker_executor - DEBUG - Docker is running
+2026-04-07 17:35:54,281 - docker_executor - DEBUG - Code cleaned: 88 characters
+2026-04-07 17:35:54,992 - docker_executor - DEBUG - C compilation successful
+2026-04-07 17:35:55,634 - docker_executor - ERROR - C RE: Floating point exception (core dumped)
+2026-04-07 17:35:55,639 - docker_executor - ERROR - Test Case 1 -> RE: Floating point exception (core dumped)
+2026-04-07 17:35:55,657 - docker_executor - DEBUG - Docker is running
+2026-04-07 17:35:55,658 - docker_executor - DEBUG - Code cleaned: 242 characters
+2026-04-07 17:35:57,336 - docker_executor - DEBUG - Java compilation successful
+2026-04-07 17:35:58,002 - docker_executor - INFO - Test Case 1 -> PASS (568.8ms)
+2026-04-07 17:35:59,342 - docker_executor - DEBUG - Java compilation successful
+2026-04-07 17:36:00,039 - docker_executor - INFO - Test Case 2 -> PASS (595.0ms)
+2026-04-07 17:36:01,481 - docker_executor - DEBUG - Java compilation successful
+2026-04-07 17:36:02,217 - docker_executor - INFO - Test Case 3 -> PASS (636.6ms)
+2026-04-07 17:36:03,312 - docker_executor - DEBUG - Java compilation successful
+2026-04-07 17:36:03,770 - docker_executor - INFO - Test Case 4 -> PASS (389.0ms)
+2026-04-07 17:36:04,840 - docker_executor - DEBUG - Java compilation successful
+2026-04-07 17:36:05,308 - docker_executor - INFO - Test Case 5 -> PASS (404.1ms)
+2026-04-07 17:36:06,161 - docker_executor - DEBUG - Java compilation successful
+2026-04-07 17:36:06,755 - docker_executor - INFO - Test Case 6 -> PASS (509.5ms)
+2026-04-07 17:36:07,681 - docker_executor - DEBUG - Java compilation successful
+2026-04-07 17:36:08,149 - docker_executor - INFO - Test Case 7 -> PASS (402.0ms)
+2026-04-07 17:36:08,159 - docker_executor - DEBUG - Docker is running
+2026-04-07 17:36:08,160 - docker_executor - DEBUG - Code cleaned: 242 characters
+2026-04-07 17:36:09,221 - docker_executor - DEBUG - Java compilation successful
+2026-04-07 17:36:09,724 - docker_executor - WARNING - Test Case 1 -> WA

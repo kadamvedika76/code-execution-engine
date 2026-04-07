@@ -1,0 +1,357 @@
+{
+    "questions" : [
+  
+  {
+    "title": "Find Maximum Element",
+    "description": "Find the maximum element in an array.",
+    "difficulty": "Easy",
+    "sample_input": "5\n1 2 3 4 5",
+    "sample_output": "5",
+    "topic": "Arrays",
+    "testcases": [
+      {"input_data": "1\n10", "expected_output": "10"},
+      {"input_data": "5\n-1 -2 -3 -4 -5", "expected_output": "-1"}
+    ]
+  },
+  {
+    "title": "Two Sum",
+    "description": "Find indices of two numbers that sum to target.",
+    "difficulty": "Medium",
+    "sample_input": "4\n2 7 11 15\n9",
+    "sample_output": "0 1",
+    "topic": "Arrays",
+    "testcases": [
+      {"input_data": "4\n2 7 11 15\n9", "expected_output": "0 1"},
+      {"input_data": "3\n3 3 4\n6", "expected_output": "0 1"}
+    ]
+  },
+  {
+    "title": "Maximum Subarray",
+    "description": "Find maximum sum subarray.",
+    "difficulty": "Hard",
+    "sample_input": "5\n-2 1 -3 4 -1",
+    "sample_output": "4",
+    "topic": "Arrays",
+    "testcases": [
+      {"input_data": "3\n-1 -2 -3", "expected_output": "-1"},
+      {"input_data": "6\n1 2 3 4 5 6", "expected_output": "21"}
+    ]
+  },
+
+  
+  {
+    "title": "Valid Parentheses",
+    "description": "Check if parentheses are valid.",
+    "difficulty": "Easy",
+    "sample_input": "()",
+    "sample_output": "True",
+    "topic": "Stack",
+    "testcases": [
+      {"input_data": "()", "expected_output": "True"},
+      {"input_data": "(]", "expected_output": "False"}
+    ]
+  },
+  {
+    "title": "Next Greater Element",
+    "description": "Find next greater element.",
+    "difficulty": "Medium",
+    "sample_input": "4\n4 5 2 25",
+    "sample_output": "5 25 25 -1",
+    "topic": "Stack",
+    "testcases": [
+      {"input_data": "3\n1 2 3", "expected_output": "2 3 -1"}
+    ]
+  },
+  {
+    "title": "Largest Rectangle",
+    "description": "Largest rectangle in histogram.",
+    "difficulty": "Hard",
+    "sample_input": "6\n2 1 5 6 2 3",
+    "sample_output": "10",
+    "topic": "Stack",
+    "testcases": [
+      {"input_data": "3\n2 2 2", "expected_output": "6"}
+    ]
+  },
+
+  
+  {
+    "title": "Simple Queue",
+    "description": "Basic queue operations.",
+    "difficulty": "Easy",
+    "sample_input": "enqueue 1 enqueue 2 dequeue",
+    "sample_output": "1",
+    "topic": "Queue",
+    "testcases": [
+      {"input_data": "enqueue 5 dequeue", "expected_output": "5"}
+    ]
+  },
+  {
+    "title": "Circular Queue",
+    "description": "Implement circular queue.",
+    "difficulty": "Medium",
+    "sample_input": "operations",
+    "sample_output": "output",
+    "topic": "Queue",
+    "testcases": [
+      {"input_data": "test", "expected_output": "test"}
+    ]
+  },
+  {
+    "title": "Sliding Window Maximum",
+    "description": "Find max in window.",
+    "difficulty": "Hard",
+    "sample_input": "8\n1 3 -1 -3 5 3 6 7\n3",
+    "sample_output": "3 3 5 5 6 7",
+    "topic": "Queue",
+    "testcases": [
+      {"input_data": "8\n1 3 -1 -3 5 3 6 7\n3", "expected_output": "3 3 5 5 6 7"}
+    ]
+  },
+
+
+  {
+    "title": "Reverse String",
+    "description": "Reverse a string.",
+    "difficulty": "Easy",
+    "sample_input": "hello",
+    "sample_output": "olleh",
+    "topic": "String",
+    "testcases": [
+      {"input_data": "abc", "expected_output": "cba"}
+    ]
+  },
+  {
+    "title": "Longest Substring",
+    "description": "Longest substring without repeating characters.",
+    "difficulty": "Medium",
+    "sample_input": "abcabcbb",
+    "sample_output": "3",
+    "topic": "String",
+    "testcases": [
+      {"input_data": "bbbbb", "expected_output": "1"}
+    ]
+  },
+  {
+    "title": "Regex Matching",
+    "description": "Implement regex matching.",
+    "difficulty": "Hard",
+    "sample_input": "aa a*",
+    "sample_output": "True",
+    "topic": "String",
+    "testcases": [
+      {"input_data": "aa a*", "expected_output": "True"}
+    ]
+  },
+
+  
+  {
+    "title": "Reverse Linked List",
+    "description": "Reverse linked list.",
+    "difficulty": "Easy",
+    "sample_input": "1->2->3",
+    "sample_output": "3->2->1",
+    "topic": "Linked List",
+    "testcases": [
+      {"input_data": "1->2", "expected_output": "2->1"}
+    ]
+  },
+  {
+    "title": "Detect Cycle",
+    "description": "Detect cycle.",
+    "difficulty": "Medium",
+    "sample_input": "list",
+    "sample_output": "True",
+    "topic": "Linked List",
+    "testcases": [
+      {"input_data": "cycle", "expected_output": "True"}
+    ]
+  },
+  {
+    "title": "Merge K Lists",
+    "description": "Merge k lists.",
+    "difficulty": "Hard",
+    "sample_input": "lists",
+    "sample_output": "merged",
+    "topic": "Linked List",
+    "testcases": [
+      {"input_data": "lists", "expected_output": "merged"}
+    ]
+  },
+
+ 
+  {
+    "title": "Inorder Traversal",
+    "description": "Inorder traversal.",
+    "difficulty": "Easy",
+    "sample_input": "tree",
+    "sample_output": "inorder",
+    "topic": "Trees",
+    "testcases": [
+      {"input_data": "tree", "expected_output": "inorder"}
+    ]
+  },
+  {
+    "title": "Level Order",
+    "description": "Level order traversal.",
+    "difficulty": "Medium",
+    "sample_input": "tree",
+    "sample_output": "levels",
+    "topic": "Trees",
+    "testcases": [
+      {"input_data": "tree", "expected_output": "levels"}
+    ]
+  },
+  {
+    "title": "LCA",
+    "description": "Lowest common ancestor.",
+    "difficulty": "Hard",
+    "sample_input": "tree",
+    "sample_output": "node",
+    "topic": "Trees",
+    "testcases": [
+      {"input_data": "tree", "expected_output": "node"}
+    ]
+  },
+
+  
+  {
+    "title": "DFS",
+    "description": "Depth First Search.",
+    "difficulty": "Easy",
+    "sample_input": "graph",
+    "sample_output": "dfs",
+    "topic": "Graphs",
+    "testcases": [
+      {"input_data": "graph", "expected_output": "dfs"}
+    ]
+  },
+  {
+    "title": "BFS Shortest Path",
+    "description": "Shortest path BFS.",
+    "difficulty": "Medium",
+    "sample_input": "graph",
+    "sample_output": "distance",
+    "topic": "Graphs",
+    "testcases": [
+      {"input_data": "graph", "expected_output": "distance"}
+    ]
+  },
+  {
+    "title": "Dijkstra",
+    "description": "Shortest path weighted graph.",
+    "difficulty": "Hard",
+    "sample_input": "graph",
+    "sample_output": "shortest",
+    "topic": "Graphs",
+    "testcases": [
+      {"input_data": "graph", "expected_output": "shortest"}
+    ]
+  },
+
+  
+  {
+    "title": "Fibonacci",
+    "description": "Nth Fibonacci.",
+    "difficulty": "Easy",
+    "sample_input": "5",
+    "sample_output": "5",
+    "topic": "Dynamic Programming",
+    "testcases": [
+      {"input_data": "10", "expected_output": "55"}
+    ]
+  },
+  {
+    "title": "Knapsack",
+    "description": "0/1 Knapsack.",
+    "difficulty": "Medium",
+    "sample_input": "items",
+    "sample_output": "value",
+    "topic": "Dynamic Programming",
+    "testcases": [
+      {"input_data": "test", "expected_output": "test"}
+    ]
+  },
+  {
+    "title": "LIS",
+    "description": "Longest increasing subsequence.",
+    "difficulty": "Hard",
+    "sample_input": "array",
+    "sample_output": "length",
+    "topic": "Dynamic Programming",
+    "testcases": [
+      {"input_data": "array", "expected_output": "length"}
+    ]
+  },
+
+  
+  {
+    "title": "Activity Selection",
+    "description": "Select max activities.",
+    "difficulty": "Easy",
+    "sample_input": "activities",
+    "sample_output": "count",
+    "topic": "Greedy",
+    "testcases": [
+      {"input_data": "activities", "expected_output": "count"}
+    ]
+  },
+  {
+    "title": "Coin Change",
+    "description": "Minimum coins.",
+    "difficulty": "Medium",
+    "sample_input": "coins",
+    "sample_output": "min",
+    "topic": "Greedy",
+    "testcases": [
+      {"input_data": "coins", "expected_output": "min"}
+    ]
+  },
+  {
+    "title": "Huffman Coding",
+    "description": "Huffman coding.",
+    "difficulty": "Hard",
+    "sample_input": "freq",
+    "sample_output": "tree",
+    "topic": "Greedy",
+    "testcases": [
+      {"input_data": "freq", "expected_output": "tree"}
+    ]
+  },
+
+ 
+  {
+    "title": "Permutations",
+    "description": "Generate permutations.",
+    "difficulty": "Easy",
+    "sample_input": "1 2",
+    "sample_output": "1 2,2 1",
+    "topic": "Backtracking",
+    "testcases": [
+      {"input_data": "1", "expected_output": "1"}
+    ]
+  },
+  {
+    "title": "N Queens",
+    "description": "Solve N queens.",
+    "difficulty": "Medium",
+    "sample_input": "4",
+    "sample_output": "solutions",
+    "topic": "Backtracking",
+    "testcases": [
+      {"input_data": "4", "expected_output": "solutions"}
+    ]
+  },
+  {
+    "title": "Sudoku Solver",
+    "description": "Solve sudoku.",
+    "difficulty": "Hard",
+    "sample_input": "grid",
+    "sample_output": "solved",
+    "topic": "Backtracking",
+    "testcases": [
+      {"input_data": "grid", "expected_output": "solved"}
+    ]
+  }
+]
+}
